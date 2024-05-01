@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>to do app</title>
+</head> 
+<body>
+ 
+<div class="datetime">
+  <div class="time">
+      <span id="hour">00:</span>
+      <span id="minutes">00:</span>
+      <span id="seconds">00:</span>
+      <span id="period">AM</span>
+  </div>
+  <div class="date">
+      <span id="dayname">Day</span>
+      <span id="month">Month</span>
+      <span id="daynum">00</span>
+      <span id="year">Year</span>
+      <div>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="task-box" >
+      <h2>Total Tasks:</h2>
+      <span id="totalTasksCount">1</span>
+  </div>
+  <div class="task-box">
+      <h2>Completed Tasks:</h2>
+      <ul id="completedTasksList">0</ul>
+  </div>
+  <div class="task-box" >
+      <h2>Remaining Tasks:</h2>
+      <ul id="remainingTasksList">1</ul>
+  </div>
+  </div>
+<div class="container2">
+  <div class=ToDoApp>
+      <h2>To-Do List</h2>
+  <div class="row">
+      <input type="text" placeholder="Enter Your Task" id="inputbox">
+      <button onclick="add">Add</button>
+  </div>
+  <div class="row">
+    <button onclick="ClearAll()">Clear All Tasks</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
